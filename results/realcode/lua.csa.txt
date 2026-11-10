@@ -1,0 +1,3 @@
+lua/lapi.c:1476:3: warning: Access to field 'marked' results in a dereference of a null pointer [clang-analyzer-core.NullDereference]
+lua/ldebug.c:101:27: warning: Access to field 'p' results in a dereference of a null pointer [clang-analyzer-core.NullDereference]
+lua/lstrlib.c:981:7: warning: Dereference of null pointer [clang-analyzer-core.NullDereference]

@@ -1,0 +1,333 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_parse_document_start",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/parser.c"
+                },
+                "region": {
+                  "startColumn": 65,
+                  "startLine": 391
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "a pointer that may be null is passed to 'yaml_parser_process_directives', which dereferences it"
+          },
+          "properties": {
+            "cert": "EXP34-C",
+            "confidence": "definite"
+          },
+          "ruleId": "CWE-476"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_parse_node",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/parser.c"
+                },
+                "region": {
+                  "startColumn": 48,
+                  "startLine": 632
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "a pointer that may be null is passed to 'memcpy', whose parameter is declared nonnull"
+          },
+          "properties": {
+            "cert": "EXP34-C",
+            "confidence": "may"
+          },
+          "ruleId": "CWE-476"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_parse_node",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/parser.c"
+                },
+                "region": {
+                  "startColumn": 52,
+                  "startLine": 625
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "a pointer that may be null is passed to 'strlen', whose parameter is declared nonnull"
+          },
+          "properties": {
+            "cert": "EXP34-C",
+            "confidence": "may"
+          },
+          "ruleId": "CWE-476"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_parse_block_sequence_entry",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/parser.c"
+                },
+                "region": {
+                  "startColumn": 14,
+                  "startLine": 751
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "'token' may be null here: it is null, or was checked against null, on some path"
+          },
+          "properties": {
+            "cert": "EXP34-C",
+            "confidence": "may"
+          },
+          "ruleId": "CWE-476"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_parse_block_mapping_key",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/parser.c"
+                },
+                "region": {
+                  "startColumn": 14,
+                  "startLine": 859
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "'token' may be null here: it is null, or was checked against null, on some path"
+          },
+          "properties": {
+            "cert": "EXP34-C",
+            "confidence": "may"
+          },
+          "ruleId": "CWE-476"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_parse_flow_sequence_entry",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/parser.c"
+                },
+                "region": {
+                  "startColumn": 14,
+                  "startLine": 974
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "'token' may be null here: it is null, or was checked against null, on some path"
+          },
+          "properties": {
+            "cert": "EXP34-C",
+            "confidence": "may"
+          },
+          "ruleId": "CWE-476"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_parse_flow_mapping_key",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/parser.c"
+                },
+                "region": {
+                  "startColumn": 14,
+                  "startLine": 1130
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "'token' may be null here: it is null, or was checked against null, on some path"
+          },
+          "properties": {
+            "cert": "EXP34-C",
+            "confidence": "may"
+          },
+          "ruleId": "CWE-476"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_process_directives",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/parser.c"
+                },
+                "region": {
+                  "startColumn": 33,
+                  "startLine": 1295
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "memory allocated here is not freed on some path through 'yaml_parser_process_directives'"
+          },
+          "properties": {
+            "cert": "MEM31-C",
+            "confidence": "may"
+          },
+          "ruleId": "CWE-401"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "yaml_parser_scan_tag_uri",
+                  "kind": "function"
+                }
+              ],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "libyaml/src/scanner.c"
+                },
+                "region": {
+                  "startColumn": 30,
+                  "startLine": 2613
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "a pointer that may be null is passed to 'memcpy', whose parameter is declared nonnull"
+          },
+          "properties": {
+            "cert": "EXP34-C",
+            "confidence": "may"
+          },
+          "ruleId": "CWE-476"
+        }
+      ],
+      "tool": {
+        "driver": {
+          "informationUri": "https://github.com/Other-Now/cwe-scan",
+          "name": "cwe-scan",
+          "rules": [
+            {
+              "helpUri": "https://cwe.mitre.org/data/definitions/476.html",
+              "id": "CWE-476",
+              "name": "NULL Pointer Dereference",
+              "properties": {
+                "cert": "EXP34-C"
+              },
+              "shortDescription": {
+                "text": "NULL Pointer Dereference"
+              }
+            },
+            {
+              "helpUri": "https://cwe.mitre.org/data/definitions/416.html",
+              "id": "CWE-416",
+              "name": "Use After Free",
+              "properties": {
+                "cert": "MEM30-C"
+              },
+              "shortDescription": {
+                "text": "Use After Free"
+              }
+            },
+            {
+              "helpUri": "https://cwe.mitre.org/data/definitions/415.html",
+              "id": "CWE-415",
+              "name": "Double Free",
+              "properties": {
+                "cert": "MEM30-C"
+              },
+              "shortDescription": {
+                "text": "Double Free"
+              }
+            },
+            {
+              "helpUri": "https://cwe.mitre.org/data/definitions/401.html",
+              "id": "CWE-401",
+              "name": "Missing Release of Memory after Effective Lifetime",
+              "properties": {
+                "cert": "MEM31-C"
+              },
+              "shortDescription": {
+                "text": "Missing Release of Memory after Effective Lifetime"
+              }
+            }
+          ],
+          "version": "0.1.0"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}
