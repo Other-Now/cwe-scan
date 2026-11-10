@@ -17,4 +17,4 @@ jobs:
       - name: Juliet scores match results/juliet.json
         run: |
           python3 bench/juliet.py --juliet juliet/C --tools cwe-scan,cwe-scan-whole --out ci-results
-          python3 bench/check_results.py results/juliet.json ci-results/juliet.json cwe-scan cwe-scan-whole
+          python3 bench/check_results.py results/juliet.json ci-results/juliet.json cwe-scan cwe-scan-whole cwe-scan-definite cwe-scan-whole-definite
