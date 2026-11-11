@@ -149,7 +149,7 @@ it doesn't do. A benchmark score alone would have misrepresented it.
 ## Build and run
 
 Linux with LLVM/Clang 20 development packages (Ubuntu 24.04:
-`llvm-20-dev libclang-20-dev`), CMake and Ninja.
+`llvm-20-dev libclang-20-dev libclang-cpp20-dev`), CMake and Ninja.
 
 ```sh
 cmake -S . -B build -G Ninja && cmake --build build
